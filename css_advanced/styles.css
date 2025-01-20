@@ -97,6 +97,60 @@ nav a {
     font-weight: bold;
     color: #A259FF; /* Adjust based on Figma */
 }
+/* Videos List Section */
+.videos-section {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.videos-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+/* Video Grid */
+.videos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Video Card */
+.video-card {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.video-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+.video-card p {
+    font-size: 14px;
+    color: #A0A0A0;
+    margin-top: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .videos-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
