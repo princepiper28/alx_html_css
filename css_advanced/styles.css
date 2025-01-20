@@ -76,6 +76,28 @@ nav a {
         font-size: 48px;
     }
 }
+/* Quote Section */
+.quote-section {
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote-section blockquote {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.quote-section .author {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #A259FF; /* Adjust based on Figma */
+}
+
 
 
 
