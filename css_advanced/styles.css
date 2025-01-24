@@ -1,233 +1,102 @@
-/* General Reset */
-* {
+/* styles.css */
+
+body {
+    width: 1440px;
+    height: 1093px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
-/* Body */
-body {
-    background-color: #000;
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-}
-
-/* Header */
-header {
+.container {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
+    flex-direction: column;
+    gap: 0px;
+    opacity: 1;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
+    width: 167.02px;
+    height: 29.46px;
+    position: absolute;
+    top: 35.02px;
+    left: 171.59px;
+    background: #FFFFFF;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h1 {
-    font-size: 64px;
-    font-weight: bold;
-}
-
-.hero p {
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin-top: 10px;
-}
-
-.hero .cta-button {
-    background-color: #A259FF;
-    color: white;
-    padding: 15px 30px;
-    font-size: 18px;
-    border-radius: 25px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 20px;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header {
-        padding: 20px;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-    }
-}
-/* Quote Section */
-.quote-section {
-    text-align: center;
-    padding: 80px 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.quote-section blockquote {
-    font-size: 24px;
-    font-style: italic;
-    line-height: 1.5;
-    color: #FFFFFF;
-}
-
-.quote-section .author {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #A259FF; /* Adjust based on Figma */
-}
-/* Videos List Section */
-.videos-section {
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.videos-section h2 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #FFFFFF;
-    margin-bottom: 40px;
-}
-
-/* Video Grid */
-.videos-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Video Card */
-.video-card {
-    background-color: #222;
-    padding: 15px;
-    border-radius: 10px;
+.courses {
+    width: 50px;
+    height: 15px;
+    background: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.08px;
     text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
-.video-card img {
-    width: 100%;
-    border-radius: 10px;
+.pricing {
+    width: 45px;
+    height: 15px;
+    position: absolute;
+    left: 102px;
+    background: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
-.video-card h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-    color: #FFFFFF;
+.login {
+    width: 34px;
+    height: 15px;
+    position: absolute;
+    left: 200px;
+    background: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.08px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
-.video-card p {
-    font-size: 14px;
-    color: #A0A0A0;
-    margin-top: 5px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .videos-container {
-        grid-template-columns: 1fr;
-    }
-}
-/* Membership Section */
-.membership-section {
+.get-schooled {
+    width: 684px;
+    height: 151px;
+    position: absolute;
+    top: 220px;
+    left: 377px;
+    background: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 150.84px;
     text-align: center;
-    padding: 80px 20px;
-    background-color: #111; /* Adjust color based on Figma */
-    color: #FFFFFF;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
-.membership-section h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.membership-section p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #A0A0A0;
-    line-height: 1.5;
-}
-
-/* Membership Plans */
-.membership-plans {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.plan-card {
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    width: 280px;
+.smiles {
+    width: 52px;
+    height: 20px;
+    position: absolute;
+    top: 361px;
+    left: 593px;
+    background: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.11px;
     text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
-
-.plan-card h3 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #FFFFFF;
-}
-
-.plan-card p {
-    font-size: 16px;
-    color: #A0A0A0;
-    margin-bottom: 15px;
-}
-
-/* CTA Button */
-.plan-card .cta-button {
-    background-color: #A259FF;
-    color: white;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    border: none;
-    cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .membership-plans {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-
-
-
-
-
- 
